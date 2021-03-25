@@ -1,0 +1,22 @@
+/* Sorting array by name (alphabet order) */
+var myArr = [
+ {
+  num:5,
+  name:'apple'
+ },
+ {
+  num:7,
+  name:'cabbage'
+ },
+ {
+  num:1,
+  name:'banana'
+ }
+];
+
+myArr.sort(function(val1,val2){
+ if (val1.name < val2.name){
+  return -1;
+ }
+ return 1;
+})
